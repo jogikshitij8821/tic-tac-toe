@@ -1,38 +1,58 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+/* Improve square styling */
+.square {
+  background: white;
+  height: 60px;
+  width: 60px;
+  font-size: 24px; /* Slightly reduced font size for better fit */
+  font-weight: bold;
+  display: flex; /* Use flexbox for centering content */
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  text-align: center;
+  border: 5px solid rgb(81, 42, 165);
+  color: coral;
+  padding: 15px;
+
 }
 
-.App-link {
-  color: #61dafb;
+
+/* Improve board row styling */
+.board-row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+  
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/* Improve tic positioning */
+.tic {
+  margin-top: 20px; /* Reduce the top margin for better positioning */
+  border: 10px solid rgb(161, 47, 255);
+  box-shadow: 10px 10px 10px  black;
+  border-radius: 5%;
+}
+.status {
+  margin-bottom: 10px;
+  text-align: center;
+  font-size: 24px;
+  background-color: rgb(222, 51, 202);
+  color: rgb(40, 41, 35);
+  box-shadow: 10px 10px 10px  black;
+  border-radius: 30%;
+}
+
+/* Improve body background */
+body {
+   background-color: darkslategray;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Ensure the game is centered vertically */
+}
+.button-container{
+  margin-top: 10px;
+  margin-bottom: 10px;
+  text-align: center;
+  
+  
 }
